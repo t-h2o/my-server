@@ -18,7 +18,7 @@
 
 ## Setting up your ftp server with vsftpd
 - vsftpd "is a lightweight, stable and secure FTP server for UNIX-like systems." - Arch Wiki
-- I followed [this tutorial](https://wiki.archlinux.org/title/Very_Secure_FTP_Daemon).
+- I followed [this tutorial](https://wiki.archlinux.org/title/Very_Secure_FTP_Daemon). I absolutely recommend this ressource if you want more information.
 - To install it
   - ``sudo apt-get install vsftpd``
 - Then you need to start the daemon. 
@@ -32,3 +32,4 @@
   - And then you only have configuration left! For that, open /etc/vsftpd.conf
     - Most of that you need is enabled by default, except the ``write_enable=YES`` line which should be uncommented
     - There are many configuration options, like restricting access to a certain set of users, letting users only log to certain directories, etc.
+     - Many of them are already in the configuration file, but commented-out. There is more though, that you can add. Learn more on the [vsftpd.conf man page](http://vsftpd.beasts.org/vsftpd_conf.html).
