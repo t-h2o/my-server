@@ -28,6 +28,7 @@
     - ``sudo systemctl stop vsftpd``
   - But if you want it to run automatically every time you boot the server:
     - ``sudo systemctl **enable** vsftpd``
+  - To check that is working, run ``sudo systemctl status vsftpd``
   - And then you only have configuration left! For that, open /etc/vsftpd.conf
     - Most of that you need is enabled by default, except the ``write_enable=YES`` line which should be uncommented
     - There are many configuration options, like restricting access to a certain set of users, letting users only log to certain directories, etc.
