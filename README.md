@@ -12,4 +12,4 @@ My goal is to share you my server configuration...
 
 ## Ftp server/client docs
 
-* [ftp page](ftp_documentation.md)
+* [ftp page](ftp/ftp_documentation.md)
